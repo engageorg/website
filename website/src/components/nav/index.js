@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <motion.Nav initial={{
+    <motion.div initial={{
       opacity: 0,
       y: -40 ,
     }}
@@ -15,9 +15,11 @@ const Navbar = () => {
       duration: 0.4,
       ease: 'easeIn',
     }}>
+    <Nav>
       <DesktopNav />
       <MobileNav />
-    </motion.Nav>
+    </Nav>
+    </motion.div>
   );
 };
 
