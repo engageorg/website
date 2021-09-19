@@ -5,7 +5,7 @@ import { useMenuContext } from "../../state";
 import { useTheme } from "../../hooks";
 import Icon from "../Icon";
 
-export const links = ["home", "about", "contact"];
+export const links = ["Product", "Explore", "Resources", "Support"];
 
 const DesktopNavLinks = () => {
   const { closeMenu } = useMenuContext();
@@ -32,14 +32,15 @@ const DesktopNavLinks = () => {
 export default DesktopNavLinks;
 
 const NavLinksWrapper = styled.ul`
-  flex: 1;
+  flex: 5;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-
+  
   li:not(:last-child) {
     margin-right: 26px;
+    margin-top: auto
   }
 
   li:last-child {

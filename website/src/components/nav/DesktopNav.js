@@ -27,7 +27,7 @@ const DesktopNav = styled.nav`
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-
+  
   background: var(--bg);
   color: var(--text);
   transition: all 150ms linear;
@@ -53,7 +53,7 @@ const DesktopNav = styled.nav`
   }
 
   .logo {
-    flex: 2;
+    flex: 1;
     color: var(--text);
     font-size: 32px;
   }
