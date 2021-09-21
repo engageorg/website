@@ -38,11 +38,11 @@ export const LogoIcon = ({ name }) => {
   switch (name) {
     case "day":
       return (
-        <img style = {{width: "150px", height: "150px"}} src = {logoLight}/>
+        <img alt = "logolight" style = {{width: "150px", height: "150px"}} src = {logoLight}/>
       );
     case "night":
       return (
-        <img style = {{width: "150px", height: "150px"}} src = {logoDark}/>
+        <img alt = "logodark" style = {{width: "150px", height: "150px"}} src = {logoDark}/>
       );
     default:
       return "Icon does not exist";
