@@ -52,10 +52,6 @@ const DesktopNav = styled.nav`
     padding: 0 30px;
   }
 
-  .logo {
-    w
-  }
-
   .nav-links {
     @media screen and (max-width: 768px) {
       display: none;

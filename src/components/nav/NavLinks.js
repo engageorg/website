@@ -40,8 +40,10 @@ const NavLinksWrapper = styled.ul`
   list-style: none;
   
   li:not(:last-child) {
-    margin-right: 26px;
-    margin-top: auto
+    margin-left: auto;
+    margin-top: auto;
+    font-size: 35px;
+    
   }
 
   li:last-child {
