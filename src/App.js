@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import { MenuProvider } from "./state";
+import { MenuProvider, ThemeStateProvider } from "./state";
 import Navbar from "./components/nav";
 import About from "./About";
 
@@ -40,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
 const App = () => {
   return (
     <Router>
+      <ThemeStateProvider>
       <div className="App">
         <GlobalStyle />
         <MenuProvider>
@@ -47,6 +48,7 @@ const App = () => {
         </MenuProvider>
         <Route exact path="/about" component={About} />
       </div>
+      </ThemeStateProvider>
     </Router>
   );
 };

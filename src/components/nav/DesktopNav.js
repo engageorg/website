@@ -1,15 +1,14 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { useMenuContext } from "../../state";
+import { useMenuContext, useThemeContext } from "../../state";
 import { Squash as Hamburger } from "hamburger-react";
 import NavLinks from "./NavLinks";
 import { useScroll } from "../../hooks";
 import { LogoIcon } from "../Icon";
-import { useTheme } from "../../hooks";
 
 
 const DesktopNavbar = () => {
-  const [theme, toggleTheme] = useTheme();
+  const { theme } = useThemeContext();
   console.log(theme);
   const { isMenuOpen, toggleMenu } = useMenuContext();
   const { isScrolled } = useScroll();

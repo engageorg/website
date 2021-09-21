@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useMenuContext } from "../../state";
-import { useTheme } from "../../hooks";
+import { useMenuContext, useThemeContext } from "../../state";
 import { ThemeIcon } from "../Icon";
 
 
@@ -11,7 +10,7 @@ export const links = ["Product", "Explore", "Resources"];
 
 const DesktopNavLinks = () => {
   const { closeMenu } = useMenuContext();
-  const [theme, toggleTheme] = useTheme();
+  const { theme, toggleTheme } = useThemeContext();
 
   return (
     <NavLinksWrapper className="nav-links">
