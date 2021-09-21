@@ -33,7 +33,7 @@ const DesktopNavLinks = () => {
 export default DesktopNavLinks;
 
 const NavLinksWrapper = styled.ul`
-  flex: 5;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
