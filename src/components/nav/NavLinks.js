@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useMenuContext } from "../../state";
 import { useTheme } from "../../hooks";
-import Icon from "../Icon";
+import { ThemeIcon } from "../Icon";
 
-export const links = ["Product", "Explore", "Resources", "Support"];
+
+export const links = ["Product", "Explore", "Resources"];
+
 
 const DesktopNavLinks = () => {
   const { closeMenu } = useMenuContext();
@@ -22,7 +24,7 @@ const DesktopNavLinks = () => {
       ))}
       <li>
         <button onClick={toggleTheme}>
-          <Icon name={theme === "dark" ? "day" : "night"} />
+          <ThemeIcon name={theme === "dark" ? "day" : "night"} />
         </button>
       </li>
     </NavLinksWrapper>

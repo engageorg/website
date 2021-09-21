@@ -5,6 +5,7 @@ import { useScrollFreeze } from "../../hooks";
 import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
 
+
 const MobileNavbar = () => {
   const { isMenuOpen } = useMenuContext();
   useScrollFreeze(isMenuOpen);

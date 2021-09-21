@@ -1,19 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { useMenuContext } from "../../state";
 import { Squash as Hamburger } from "hamburger-react";
 import NavLinks from "./NavLinks";
 import { useScroll } from "../../hooks";
+import { LogoIcon } from "../Icon";
+import { useTheme } from "../../hooks";
+
 
 const DesktopNavbar = () => {
+  const [theme, toggleTheme] = useTheme();
+  console.log(theme);
   const { isMenuOpen, toggleMenu } = useMenuContext();
   const { isScrolled } = useScroll();
   return (
     <DesktopNav isScrolled={isScrolled}>
-      <Link to="/" className="logo">
-        Engage
-      </Link>
+      <LogoIcon name = { theme === "dark" ? "day" : "night"} />
       <NavLinks />
       <Hamburger toggled={isMenuOpen} toggle={toggleMenu} duration={0} />
     </DesktopNav>
@@ -27,7 +29,6 @@ const DesktopNav = styled.nav`
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  
   background: var(--bg);
   color: var(--text);
   transition: all 150ms linear;
@@ -43,7 +44,7 @@ const DesktopNav = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  height: 64px;
+  height: 15vh;
   padding: 0 60px;
   z-index: 2;
 
@@ -53,9 +54,7 @@ const DesktopNav = styled.nav`
   }
 
   .logo {
-    flex: 1;
-    color: var(--text);
-    font-size: 32px;
+    w
   }
 
   .nav-links {

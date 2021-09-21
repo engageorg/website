@@ -1,6 +1,8 @@
 import React from "react";
+import logoLight from "../asset/logo_light.svg" 
+import logoDark from "../asset/logo_dark.svg"
 
-const Icon = ({ name, size = "24" }) => {
+export const ThemeIcon = ({ name, size = "24" }) => {
   switch (name) {
     case "day":
       return (
@@ -32,4 +34,17 @@ const Icon = ({ name, size = "24" }) => {
   }
 };
 
-export default Icon;
+export const LogoIcon = ({ name }) => {
+  switch (name) {
+    case "day":
+      return (
+        <img style = {{width: "150px", height: "150px"}} src = {logoLight}/>
+      );
+    case "night":
+      return (
+        <img style = {{width: "150px", height: "150px"}} src = {logoDark}/>
+      );
+    default:
+      return "Icon does not exist";
+  }
+};
