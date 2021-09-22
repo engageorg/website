@@ -1,11 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import { MenuProvider, ThemeStateProvider } from "./state";
 import Navbar from "./components/nav";
 import Landing from "./components/landing/index"
-import About from "./About";
 
 const GlobalStyle = createGlobalStyle`
   ${reset};

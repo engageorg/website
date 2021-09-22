@@ -9,13 +9,12 @@ const Landing = () => {
       initial=
       {{ x: 200,
          y: 800,
-        scale: 0 
+        
        }} 
 
       animate={{
         x: 1250,
         y: 200,
-        scale: 2,
         rotate: 0,
       }}
       
