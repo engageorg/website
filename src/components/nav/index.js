@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <motion.div initial={{
+    <motion.div 
+    initial={{
       opacity: 0,
       y: -40 ,
     }}
@@ -14,7 +15,8 @@ const Navbar = () => {
     transition={{
       duration: 0.4,
       ease: 'easeIn',
-    }}>
+    }}
+    >
     <Nav>
       <DesktopNav />
       <MobileNav />

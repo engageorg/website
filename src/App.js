@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import { MenuProvider, ThemeStateProvider } from "./state";
 import Navbar from "./components/nav";
+import Landing from "./components/landing/index"
 import About from "./About";
 
 const GlobalStyle = createGlobalStyle`
@@ -31,9 +32,14 @@ const GlobalStyle = createGlobalStyle`
   *::after {
     box-sizing: inherit;
   }
-  
+ 
   a {
     text-decoration: none;
+  }
+
+  .landing {
+    position : relative;
+    top : 15vh;
   }
 `;
 
@@ -44,9 +50,10 @@ const App = () => {
       <div className="App">
         <GlobalStyle />
         <MenuProvider>
-          <Navbar />
+          <Navbar className = "nav"/>
         </MenuProvider>
-        <Route exact path="/about" component={About} />
+        < Landing/>
+        
       </div>
       </ThemeStateProvider>
     </Router>
