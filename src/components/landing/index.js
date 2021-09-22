@@ -6,27 +6,29 @@ import { motion } from "framer-motion";
 const Landing = () => {
     return (
       <motion.div 
-      // initial=
-      // {{ x: 200,
-      //    y: 800,
-        
-      //  }} 
+      initial=
+      {{ x: 60,
+         y: 800,
+         scale: 0,
+       }} 
 
-      // animate={{
-      //   x: 1250,
-      //   y: 200,
-      //   rotate: 0,
-      // }}
+      animate={{
+        x: 60,
+        y: 200,
+        rotate: 0,
+        scale: 1.5
+      }}
       
-      // transition={{
-      //   type: "spring",
-      //   stiffness: 260,
-      //   damping: 20
-      // }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        duration: 5,
+        damping: 20
+      }}
       className = "landing"
       >
       <Land>
-          Interactivity of a classroom,<br/>   in a video lecture
+          Interactivity of a classroom,<br/>   in a video lecture.
       </Land>
       </motion.div>
     );
