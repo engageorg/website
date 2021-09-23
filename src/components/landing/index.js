@@ -7,16 +7,13 @@ const Landing = () => {
     return (
       <motion.div 
       initial=
-      {{ x: 60,
-         y: 800,
-         scale: 0,
+      {{ x: 30,
+         y: 800
        }} 
 
       animate={{
-        x: 60,
-        y: 200,
-        rotate: 0,
-        scale: 1.5
+        x: 30,
+        y: 40
       }}
       
       transition={{
@@ -28,7 +25,7 @@ const Landing = () => {
       className = "landing"
       >
       <Land>
-          Interactivity of a classroom,<br/>   in a video lecture.
+          Interactivity of a classroom, in a video lecture.
       </Land>
       </motion.div>
     );
@@ -37,11 +34,13 @@ const Landing = () => {
   export default Landing;
   
   const Land = styled.div`
-    top : 45vh;
-    color : var(--text);
-    font-size : 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+      color : var(--text); 
+      font-size: 100px;
+      letter-spacing: -4.5px;
+      line-height: 150px;
+      text-align: center;
+      white-space: pre-line;
+      margin-top: 100px;
+  
   `;
   
