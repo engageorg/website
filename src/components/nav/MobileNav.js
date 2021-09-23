@@ -12,14 +12,16 @@ const MobileNavbar = () => {
   return (
     <div>
       {isMenuOpen && (
-        <motion.div initial={{
+        <motion.div 
+        initial={{
           y: -100 ,
         }}
         animate={{ opacity: 1, y: 400 }}
         transition={{
           duration: 1,
           ease: 'easeIn',
-        }}>
+        }}
+        >
         <MobileNav>
           <NavLinks />
         </MobileNav>
@@ -37,7 +39,7 @@ const MobileNav = styled.nav`
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--bg);
+  background-color: var(--bg);
   display: flex;
   justify-content: center;
   align-items: center;

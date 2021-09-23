@@ -16,7 +16,7 @@ const DesktopNavbar = () => {
     <DesktopNav isScrolled={isScrolled}>
       <LogoIcon name = { theme === "dark" ? "day" : "night"} />
       <NavLinks />
-      <Hamburger toggled={isMenuOpen} toggle={toggleMenu} duration={0} />
+      <Hamburger toggled={isMenuOpen} toggle={toggleMenu} duration={0.5} />
     </DesktopNav>
   );
 };
