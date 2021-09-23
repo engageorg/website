@@ -7,12 +7,12 @@ const Landing = () => {
     return (
       <motion.div 
       initial=
-      {{ x: 30,
+      {{ x: 10,
          y: 800
        }} 
 
       animate={{
-        x: 30,
+        x: 10,
         y: 40
       }}
       
@@ -41,6 +41,7 @@ const Landing = () => {
       text-align: center;
       white-space: pre-line;
       margin-top: 100px;
+      overflow-y: hidden;
   
   `;
   
