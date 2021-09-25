@@ -35,6 +35,12 @@ body {
   box-sizing: inherit;
 }
 
+button{
+  background-color: transparent;
+  border: none;
+  margin: none;
+}
+
 a {
   text-decoration: none;
 }

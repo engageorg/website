@@ -6,8 +6,8 @@ export const useTheme = () => {
 
   const toggleTheme = () =>
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
-
-  useEffect(() => {
+    console.log("clicked");
+    useEffect(() => {
     document.body.className = "";
     document.body.classList.add(theme);
   }, [theme]);

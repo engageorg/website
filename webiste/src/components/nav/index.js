@@ -1,15 +1,15 @@
 import React from "react";
 import "./style.css"
-import { useThemeContext } from "../../state/Theme";
-import { Link } from "react-router-dom";
+import { useThemeContext, useMenuContext } from "../../state";
+import Hamburger from 'hamburger-react'
 import { motion } from "framer-motion";
-import { LogoIcon } from "./Icon"
+import { LogoIcon, ThemeIcon } from "./Icon"
 
 export const links = ["Product", "Explore", "Resources"];
 
 const Navbar = () => {
-  const { theme } = useThemeContext();
-
+  const { theme, toggleTheme } = useThemeContext();
+  const { isMenuOpen, toggleMenu } = useMenuContext();
   return (
     <motion.div 
     initial={{
@@ -29,16 +29,18 @@ const Navbar = () => {
      </div>
      <div className = "nav-options">
      {links.map((link) => (
-        <div className = "nav-option">
-           <div className = "nav-option-text">{link} </div>
-           
+        <div key = {link} className = "nav-option">
+           <div className = "nav-option-text">{link}</div>   
         </div>
       ))}
-      {/* <li>
+      
+
+      <li>
         <button onClick={toggleTheme}>
-          <ThemeIcon name={theme === "dark" ? "day" : "night"} />
+          <ThemeIcon name = {theme === "dark" ? "day" : "night"} />
         </button>
-      </li> */}
+      </li>
+      <Hamburger duration={1} />
      </div>
     </div>
     </motion.div>
