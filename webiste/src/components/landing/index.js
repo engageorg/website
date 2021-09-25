@@ -41,7 +41,6 @@ const Landing = () => {
       text-align: center;
       white-space: pre-line;
       margin-top: 100px;
-      overflow-y: hidden;
-  
+      background-color: black;
   `;
   

@@ -4,7 +4,7 @@ import { useMenuContext, useThemeContext } from "../../state";
 import { Squash as Hamburger } from "hamburger-react";
 import NavLinks from "./NavLinks";
 import { useScroll } from "../../hooks";
-import { LogoIcon } from "../Icon";
+import { LogoIcon } from "../../../webiste/src/components/nav/Icon";
 
 
 const DesktopNavbar = () => {

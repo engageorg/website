@@ -1,6 +1,6 @@
 import React from "react";
-import logoLight from "../asset/logo_light.svg" 
-import logoDark from "../asset/logo_dark.svg"
+import logoLight from "../../asset/logo_light.svg" 
+import logoDark from "../../asset/logo_dark.svg"
 
 export const ThemeIcon = ({ name, size = "24" }) => {
   switch (name) {

@@ -36,10 +36,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  .landing {
-    position : relative;
-    top : 15vh;
-  }
+
 `;
 
 const App = () => {
