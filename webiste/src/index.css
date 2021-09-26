@@ -43,6 +43,7 @@ button{
 
 button:hover{
  transform: scale(1.4);
+ transition: 100ms
 }
 
 a {

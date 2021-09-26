@@ -5,10 +5,12 @@ import { MenuProvider, ThemeStateProvider } from "./state";
 function App() {
   return (
     <>
+      <ThemeStateProvider>
       <Navbar/>
       <div className = "App">
        
       </div>
+      </ThemeStateProvider>
     </>
   );
 }
