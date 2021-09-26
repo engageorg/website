@@ -69,9 +69,14 @@
   width: 100%;
 }
 
+.theme-icon {
+  margin-left: auto;
+}
+
 .hamburger-react {
   display: none;
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 1279px){
   .nav-container {
@@ -93,7 +98,13 @@
 }
 
 @media only screen and (max-width: 530px){
+
+  .hamburger-react {
+    display: block;
+  }
+
   .nav-options{
+    display: none;
     flex-direction: column;
   }
 }

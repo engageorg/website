@@ -39,6 +39,7 @@ button{
   background-color: transparent;
   border: none;
   margin: none;
+  transition: 100ms
 }
 
 button:hover{

@@ -34,12 +34,13 @@ const Navbar = () => {
         </div>
       ))}
       
-      <button onClick={toggleTheme}>
+      <button className = "theme-icon" onClick={toggleTheme}>
           <ThemeIcon name = {theme === "dark" ? "day" : "night"} />
       </button>
       
-      <Hamburger duration={1} />
+      
      </div>
+     <Hamburger duration={1} />
     </div>
     </motion.div>
   );
