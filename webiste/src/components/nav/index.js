@@ -34,12 +34,10 @@ const Navbar = () => {
         </div>
       ))}
       
-
-      <li>
-        <button onClick={toggleTheme}>
+      <button onClick={toggleTheme}>
           <ThemeIcon name = {theme === "dark" ? "day" : "night"} />
-        </button>
-      </li>
+      </button>
+      
       <Hamburger duration={1} />
      </div>
     </div>

@@ -41,6 +41,10 @@ button{
   margin: none;
 }
 
+button:hover{
+ transform: scale(1.4);
+}
+
 a {
   text-decoration: none;
 }
