@@ -101,6 +101,11 @@
 
   .hamburger-react {
     display: block;
+    padding-right: 100px;
+  }
+  
+  .nav-links {
+    justify-content: space-between;
   }
 
   .nav-options{
