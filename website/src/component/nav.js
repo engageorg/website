@@ -3,16 +3,16 @@ import React from 'react';
 function nav() {
     return ( 
         <>
-        <nav className="container1">  
-            <div className="nav-link">
-                <img className="iconImage" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjIzIiB2aWV3Qm94PSIwIDAgMjMgMjMiIHdpZHRoPSIyMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0ibTExLjUgMTEuNjE2NnYxMS4xNzA0Yy4xOTQ1IDAgLjMyMjMtLjA0MjIuNDk2OS0uMTQxOWw4Ljk0NDUtNS4xMTExYy4zNTMxLS4yMDI0LjQ5NzEtLjUxNTguNDk3MS0uOTIyOXYtMTAuMzY0MTljMC0uMjA0Mi0uMDQzLS4zMjYzNi0uMTQyMi0uNDk2OTFsLTkuNTEwMiA1LjM3MzVjLS4xNzY5LjEwMTEtLjI4NjEuMjg5My0uMjg2MS40OTMxem00Ljk2OTEgNi40MTQzYzAgLjI4MzktLjEwNjQuNDI1OS0uMzU0OS41Njc5bC0yLjk4MTUgMS43MDM3Yy0uMjEyOS4xNDE5LS40OTY5LjA3MS0uNDk2OS0uMjEzdi03LjU5NTdjMC0uMjAzMi4xNzg4LS40NjY1LjM1NDktLjU2NzlsNi44MTQ5LTMuOTA0MjljLjE4OTMtLjEwODk0LjM1NDkuMDY1NTQuMzU0OS4yODM5NXY0LjA0NjM0YzAgLjIwOTctLjA5ODkuMzk4Mi0uMjg0LjQ5NjlsLTMuMDUyNCAxLjYzMjdjLS4xODUxLjA5ODctLjM1NS4yODcxLS4zNTUuNDk2OXoiIGZpbGw9IiM5OTkiLz48cGF0aCBkPSJtMS41NjE1MiAxNi42MTF2LTEwLjM2NDE2YzAtLjQwNzU5LjIxNDAyLS43OTE2LjU2NzktLjk5MzgzbDguNjYwNDgtNC44OTgxNDZjLjE4NjYtLjA5ODg4My40OTY5LS4xNDE5NzMuNzA5OS0uMTQxOTczcy41NDE1LjA1Mjc0MS43MDk5LjE0MTk3NWw4LjU4OTUgNC44OTgxNDRjLjE2OTkuMTAwNDIuNDAwOC4zMzE3Mi40OTY5LjQ5NjkybC05LjUxMjQgNS4zOTUwN2MtLjE3NjkuMTAxMS0uMjgzOS4yOTMxLS4yODM5LjQ5Njl2MTEuMTQ1MWMtLjE5NDUgMC0uMzkzMy0uMDQyMy0uNTY3OS0uMTQybC04LjczMTQ5LTUuMDQwMWMtLjM1Mzg5LS4yMDIzLS42Mzg4OS0uNTg2My0uNjM4ODktLjk5Mzl6bTEuMjc3NzgtOC4zMDU1MnY0LjA0NjMyYzAgLjI4MzkuMDcwOTkuNDI1OS4zNTQ5NC41Njc5bDIuOTgxNDggMS43MDM3Yy4yODM5NS4xNDIuMzU0OTQuMzU0OS4zNTQ5NC41Njc5djIuODM5NWMwIC4yODM5LjA3MDk5LjQyNTkuMzU0OTQuNTY3OWwyLjk4MTQ4IDEuNzAzN2MuMjgzOTIuMTQyLjQ5NjkyLjA3MS40OTY5Mi0uMjEzdi03LjU5NTZjMC0uMjEzLS4wNzEtLjQyNi0uMzU0OS0uNTY3OWwtNi42NzI4OS0zLjgzMzM4Yy0uMjEyOTYtLjE0MTk3LS40OTY5MS0uMDcwOTktLjQ5NjkxLjIxMjk2em0xMS42NDItNC44MjcxNi0yLjYyNjYgMS40OTA3NGMtLjIxMjkuMTQxOTgtLjQ5NjkuMTQxOTgtLjcwOTggMGwtMi42MjY1OS0xLjQ5MDc0Yy0uMTcyODktLjA5NzcyLS4zOTQ3Mi0uMDk3MjItLjU2NzkgMGwtMy4yNjU0MyAxLjg0NTY4Yy0uMjgzOTUuMTQxOTgtLjI4Mzk1LjQyNTkzIDAgLjU2NzlsNi41MzA4MiAzLjc2MjM1Yy4xNzQ4LjEwMDA2LjM5MzIuMTAwMDYuNTY3OSAwbDYuNTMwOS0zLjc2MjM1Yy4yMTMtLjE0MTk3LjI4NC0uNDI1OTIgMC0uNTY3OWwtMy4yNjU0LTEuODQ1NjhjLS4xNzMyLS4wOTcyMi0uMzk1LS4wOTc3Mi0uNTY3OSAweiIgZmlsbD0iI2YyZjJmMiIvPjwvZz48L3N2Zz4=" alt="image"/>
-                <li>Sandbox </li>
-                <li className="NavElements">Explore</li>
-                <li className="NavElements">Resources</li>
-                <li className="NavElements">Support</li>
-                <li className="NavElements">Pricing</li>
-            </div>
-        </nav>
+    <nav class="navbar">
+        <ul>
+            <img class="company-logo "src="https://www.eppisai.com/static/media/logo_light.4875494a.svg" alt="logo"/>
+             <li>About</li>  
+             <li>Explore</li>
+             <li>Resources</li> 
+             <li>Pricing</li>
+             <button>Jump right in!</button>
+        </ul>
+    </nav>
         </>
      );
 }
