@@ -2,7 +2,7 @@ import React from 'react';
 
 function nav() {
     return ( 
-        <>
+        <div data-scroll-section>
     <nav class="navbar">
         <ul>
             <img class="company-logo "src="https://www.eppisai.com/static/media/logo_light.4875494a.svg" alt="logo"/>
@@ -13,7 +13,7 @@ function nav() {
              <button>Jump right in!</button>
         </ul>
     </nav>
-        </>
+        </div>
      );
 }
 
