@@ -13,7 +13,7 @@ import Home from "./pages/home";
 
 const routes = [
   { path: "/", name: "Home", Component: Home },
-  { path: "/case-studies", name: "Our Aim", Component: ourAim },
+  { path: "/our-vision", name: "Our Aim", Component: ourAim },
   { path: "/approach", name: "approach", Component: Approach },
   { path: "/services", name: "services", Component: Services },
   { path: "/about-us", name: "about", Component: About }
