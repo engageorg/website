@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
 import { gsap } from "gsap";
-import "./styles/App.scss";
+import "./styles/App.css";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
 
