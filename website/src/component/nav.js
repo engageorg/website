@@ -10,7 +10,7 @@ function nav() {
                     <li>Explore</li>
                     <li>Resources</li> 
                     <li>Pricing</li>
-                    <button>Jump right in!</button>
+                    <button class = "hire-button">We're hiring great people like you</button>
                 </ul>
             </nav>
         </div>

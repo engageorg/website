@@ -2,10 +2,10 @@ body{
    
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Rubik', sans-serif;;
     font-weight: 700;
     margin: 0;
-    
+    background-color: #000000;
 }
 
 .company-logo{
@@ -42,18 +42,21 @@ li:hover{
     cursor: pointer;
 }
 
-button{
-    background-color:#0F00FF;
-    border: 0;
-    padding: 12px 24px;
-    color: #fff;
-     border-radius: 0.6rem;
-     font-size: 0.8rem;
-     font-weight: 600;
+.hire-button{
+    overflow: hidden;
+    text-align: center;
+    padding-top: 5px;
+    width: 92px;
+    height: 3vh;
+    animation: ease-in;
 }
-button:hover{
-  
-   transform:scale(1.1);
-    transition: 0.3s;
 
+.hire-button:hover{
+  width: 250px;
+  transition: 1.5s;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
 }

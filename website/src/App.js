@@ -28,10 +28,13 @@ function App() {
       <div className="App">
           <Nav/>
         
-        <section>
-          <div class="container">
-            
-          </div>
+        <section class="container">
+        </section>
+
+        <section class="container">
+        </section>
+
+        <section class="container">
         </section>
 
       </div>
