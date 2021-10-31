@@ -44,7 +44,7 @@ const Cases = () => {
               </div>
               <div className='case-image'>
                 <img
-                  src={require(`../assets/${caseItem.img}.png`)}
+                  src={require(`../assets/${caseItem.img}.png`).default}
                   alt={caseItem.title}
                 />
               </div>
