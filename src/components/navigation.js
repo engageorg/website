@@ -51,15 +51,15 @@ const Navigation = () => {
                 <li className='nav-info-label'>Headquarter</li>
                 <li>Engage Education's Office</li>
                 <li>Dighi Hills</li>
-                <li>Somewhere in Pune</li>
+                <li>Pune</li>
               </ul>
               <ul className='nav-info'>
                 <li className='nav-info-label'>Phone</li>
                 <li>+91 6394644323</li>
               </ul>
               <ul className='nav-info'>
-                <li className='nav-info-label'>Legal</li>
-                <li>Engage@2021</li>
+                <li className='nav-info-label'>Email</li>
+                <li>engagedstudies@gmail.com</li>
               </ul>
             </div>
           </div>
